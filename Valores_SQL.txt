@@ -48,3 +48,8 @@ Comandos SQL:
    -select * from [nome da tabela] where [nome do campo de referencia] <= valor  //exibe todos os campos de refencia de valores menores ou iguais que o especificado 
    -select * from [nome da tabela] where [nome do campo de referencia] >= valor  //exibe todos os campos de refencia de valores maiores ou iguais que o especificado	
 	//Atenção: regra também válida para strings, que serão exibidas em ordem alfabética, e para datas.
+
+
+   -select * from [nome da tabela] where Year([campo de data]) = 1999   //<<exemplo de extração de apenas ano de uma data, através da função Year.
+   -select * from [nome da tabela] where Month([campo de data]) = 5   //<<exemplo de extração de apenas mes de uma data, através da função Month.
+   -select * from [nome da tabela] where Day([campo de data]) = 10   //<<exemplo de extração de apenas dia de uma data, através da função Day.
