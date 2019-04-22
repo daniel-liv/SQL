@@ -13,8 +13,9 @@ Comandos SQL:
  where [referência utilizada] = valor da referencia
 //Nota: usa-se o where, caso contrario, todas as linhas do campo que recebeu update serao atualizada com o mesmo valor.
 
+//deletar um registro
 *delete from [nome da tabela]
- where [nome do campo referencia] = valor da referencia
+ where [ENDERECO] = 'Rua Dr Paulo Neto'
 
 *chave primaria
   ALTER TABLE [nome da tabela]
