@@ -10,7 +10,7 @@ Comandos SQL:
 
 *update [nome da tabela] set
   [nome do campo a ser atualizado] = novo valor
- where [referÍncia utilizada] = valor da referencia
+ where [refer√™ncia utilizada] = valor da referencia
 //Nota: usa-se o where, caso contrario, todas as linhas do campo que recebeu update serao atualizada com o mesmo valor.
 
 *delete from [nome da tabela]
@@ -35,7 +35,7 @@ Comandos SQL:
   -select * from [nome da tabela] //Vai pegar todos os registros de todos os campos
 
 
-  -select [campo 1] as IDENTIFICADOR //o AS vai alterar o nome a ser mostrado, que ao invÈs de ser o da coluna, ser· o especificado, que no caso È IDENTIFICADOR
+  -select [campo 1] as IDENTIFICADOR //o AS vai alterar o nome a ser mostrado, que ao inv√©s de ser o da coluna, ser√° o especificado, que no caso √© IDENTIFICADOR
 	 ,[campo2] as CLIENTE 
    from [nome da tabela] //vai pegar todos os registros dos campos especificados.
 
@@ -47,4 +47,4 @@ Comandos SQL:
    -select * from [nome da tabela] where [nome do campo de referencia] > valor  //exibe todos os campos de refencia de valores maiores que o especificado 
    -select * from [nome da tabela] where [nome do campo de referencia] <= valor  //exibe todos os campos de refencia de valores menores ou iguais que o especificado 
    -select * from [nome da tabela] where [nome do campo de referencia] >= valor  //exibe todos os campos de refencia de valores maiores ou iguais que o especificado	
-	//AtenÁ„o: regra tambÈm v·lida para strings, que ser„o exibidas em ordem alfabÈtica
+	//Aten√ß√£o: regra tamb√©m v√°lida para strings, que ser√£o exibidas em ordem alfab√©tica, e para datas.
