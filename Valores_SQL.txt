@@ -53,3 +53,10 @@ Comandos SQL:
    -select * from [nome da tabela] where Year([campo de data]) = 1999   //<<exemplo de extração de apenas ano de uma data, através da função Year.
    -select * from [nome da tabela] where Month([campo de data]) = 5   //<<exemplo de extração de apenas mes de uma data, através da função Month.
    -select * from [nome da tabela] where Day([campo de data]) = 10   //<<exemplo de extração de apenas dia de uma data, através da função Day.
+
+
+
+
+
+Link para operações com colunas:
+http://www.bosontreinamentos.com.br/sql-com-sql-server/7-t-sql-alter-e-drop-table-alterar-e-excluir-tabelas-e-colunas-sql-server/
