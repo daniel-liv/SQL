@@ -1,0 +1,50 @@
+Comandos SQL:
+
+*create table [nome da tabela]
+ ([nome do campo] [varchar] [10], [nome do campo] [int])
+
+*insert into [nome da tabela]
+  (nomes dos campos) //em ordem
+ values
+ (valores a serem inseridos) //respeitando a ordem de cima
+
+*update [nome da tabela] set
+  [nome do campo a ser atualizado] = novo valor
+ where [referência utilizada] = valor da referencia
+//Nota: usa-se o where, caso contrario, todas as linhas do campo que recebeu update serao atualizada com o mesmo valor.
+
+*delete from [nome da tabela]
+ where [nome do campo referencia] = valor da referencia
+
+*chave primaria
+  ALTER TABLE [nome da tabela]
+  ADD CONSTRAINT Pk_PRODUTOS
+  PRIMARY KEY CLUSTERED ([nome do campo], [nome do campo])
+
+*tirando a capacidade de um campo de ser nulo (ou alterando qlqr coisa da tabela)
+ ALTER TABLE [nome da tabela]
+ ALTER COLUM [nome da coluna]
+ Tipo de dado + NOT NULL
+
+*Comando select
+  -select top 1000 [campo 1]
+	 ,[campo2]
+   from [nome da tabela]  //Vai pegar os primeiros 1000 registros dos dois campos especificados
+
+
+  -select * from [nome da tabela] //Vai pegar todos os registros de todos os campos
+
+
+  -select [campo 1] as IDENTIFICADOR //o AS vai alterar o nome a ser mostrado, que ao invés de ser o da coluna, será o especificado, que no caso é IDENTIFICADOR
+	 ,[campo2] as CLIENTE 
+   from [nome da tabela] //vai pegar todos os registros dos campos especificados.
+
+
+   -select * from [nome da tabela] where [nome do campo de referencia] = valor da referencia
+
+
+   -select * from [nome da tabela] where [nome do campo de referencia] < valor  //exibe todos os campos de refencia de valores menores que o especificado 
+   -select * from [nome da tabela] where [nome do campo de referencia] > valor  //exibe todos os campos de refencia de valores maiores que o especificado 
+   -select * from [nome da tabela] where [nome do campo de referencia] <= valor  //exibe todos os campos de refencia de valores menores ou iguais que o especificado 
+   -select * from [nome da tabela] where [nome do campo de referencia] >= valor  //exibe todos os campos de refencia de valores maiores ou iguais que o especificado	
+	//Atenção: regra também válida para strings, que serão exibidas em ordem alfabética
